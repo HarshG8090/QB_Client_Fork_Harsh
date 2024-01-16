@@ -7,26 +7,26 @@ import Footer from '../Component/Footer';
 const Home = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <section id="hero" className='d-flex align-items-center justify-content-center img-fluid overflow-hidden'>
-       <div className='container'>
-      <div className='row mt-5'> 
-        <div className='col-md-12  text-md-start'>
-          <h4 className='home-h4 '>Donate Blood and get Real Blessings</h4>
-          <p className='home-text text-lg-start text-md-start '>Blessed are those who selflessly give the gift of life through blood donation. In every drop, there lies the potential to save a life and bring hope to those in need. </p>
-        </div>
-         </div> 
+        <div className='container'>
+          <div className='row mt-5'>
+            <div className='col-md-12  text-md-start'>
+              <h4 className='home-h4 mt-5'>Donate Blood and get Real Blessings</h4>
+              <p className='home-text text-lg-start text-md-start mt-2'>Blessed are those who selflessly give the gift of life through blood donation. In every drop, there lies the potential to save a life and bring hope to those in need. </p>
+            </div>
+          </div>
         </div>
       </section>
 
 
       <section className='container mt-5 mb-2 why'>
         <div className='row'>
-        <div className='col-lg-9 col-md-12 order-md-1 order-2 align-center p-4'>
+          <div className='col-lg-9 col-md-12 order-md-1 order-2 align-center p-4'>
             <p className='fs-1 text-muted fw-bold text-center'>Why to Donate Blood</p>
             <p className='lh-base text-muted'>Donating blood is crucial because it saves lives. When you donate blood, you provide a lifeline to individuals facing medical emergencies, surgeries, trauma, and various medical conditions. Blood donations are essential for:<strong>Emergency Situations, Medical Treatments, Chronic Illnesses, Pregnancy and Childbirth, Diseases and Disorders.</strong>  By donating blood, you contribute to the community's health and well-being, playing a direct role in saving lives and improving the quality of life for those in need.</p>
           </div>
-        <div className='col-lg-3 col-md-12 order-md-2 order-1 mt-3 mt-md-0 text-center'>
+          <div className='col-lg-3 col-md-12 order-md-2 order-1 mt-3 mt-md-0 text-center'>
             <img src={donate} alt="why-donate" height={250} className='rounded-circle img-why pt-2' />
           </div>
         </div>
@@ -110,10 +110,10 @@ const Home = () => {
 
 
 
-      
-<Footer/>
 
-     
+      <Footer />
+
+
     </>
   );
 }

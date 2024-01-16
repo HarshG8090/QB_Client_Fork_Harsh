@@ -9,13 +9,13 @@ const Footer = () => {
 
             {/* <hr class="my-3" > */}
             <section className=" footer pb-3">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row d-flex justify-content-between">
-                        <div className="col-lg-4 mb-4 text-center text-md-start">
+                        <div className="col-lg-4 mb-4 text-center text-md-start mleft-logo">
                             <a href=""><img src={logo} alt="logo" className="img img-fluid-logo pt-4" /></a>
                         </div>
 
-                        <div class="col-lg-3 text-center text-lg-end">
+                        <div class="col-lg-3 text-center text-lg-end mright-logo">
                             <div className="icons">
                             <a class="btn  btn-floating m-1 text-black fs-5" role="button">
                                 <i class="fab fa-facebook-f"></i>

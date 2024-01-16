@@ -12,9 +12,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.mleft-logo {
+  margin-left: 50px;
+}
+
+.mright-logo {
+  margin-right: 50px;
+}
+
 .img-fluid-logo {
   max-width: 46%;
   height: auto;
+  cursor: pointer;
 }
 
 .navbar-home .navbar-toggler {
@@ -129,17 +138,9 @@ html {
 }
 
 .why {
-  position: relative;
+  height: auto;
   border-radius: 24px;
   background-color: #f8e5e5;
-  /* width: 100%;
-  height: 304px; */
-  /* padding: 100 0 48 74; */
-}
-
-.img {
-  margin-left: 75px;
-
 }
 
 .footer-img {
@@ -187,13 +188,17 @@ html {
 
 /* Home */
 
+
+
+
+
+
 /* About */
 .banner {
   width: 100%;
-  height: 100vh;
-  /* margin-top: -700px; */
+  height: 75vh;
+  top: 5rem;
   background-image: url(/src/images/about-banner.png);
-  /* background-attachment: scroll; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,14 +206,13 @@ html {
 }
 
 .banner-text {
-  margin-top: 360px;
+  margin-top: 300px;
   margin-left: 10px;
 }
 
 .img-banner-2 {
   border-radius: 44.719rem;
   background: #FEDEDE;
-  /* background: url('http://www.w3.org/2000/svg'), lightgray 0px -139.103px / 100% 129.145% no-repeat; */
 }
 
 .banner-text .banner-head {
@@ -247,7 +251,6 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 2.5rem;
-  /* 100% */
 }
 
 .card-head {
@@ -257,25 +260,16 @@ html {
   font-style: normal;
   font-weight: 500;
   line-height: 2.5rem;
-  /* 125% */
+}
+
+.benefits-card {
+  margin: 100px 0;
 }
 
 .form-bg {
   background-color: #f8770040;
 }
 
-@media (max-width: 576px) {
-  .home-h4 {
-    font-size: 35px;
-    font-weight: 600;
-  }
-
-  .home-text {
-    font-size: 30px;
-    font-weight: 200;
-    width: 50%;
-  }
-}
 
 
 /* profile */
@@ -284,18 +278,13 @@ html {
   background-color: #fedede;
 }
 
-
-
 .dropdown-menu {
   position: absolute;
   left: -62px;
-  /* background-color: #f8770040; */
 }
 
 
 /* error page */
-
-
 
 .error-image {
   margin-top: 120px;
@@ -343,6 +332,10 @@ html {
   text-decoration: none;
 }
 
+
+
+
+/* login page */
 .btnhome {
   color: #fff;
   font-family: Roboto, sans-serif;
@@ -350,59 +343,50 @@ html {
   line-height: 1;
 }
 
-.login-btn {
-  background: #fff;
-}
-
-.login-btn:hover {
-  background-color: rgba(220, 32, 32, 0.921);
-  color: #fff;
-}
-
-.login-box {
-  position: fixed;
-  width: 470px;
-  height: 582px;
-  top: 0;
-  right: 0;
-  margin-top: 4rem;
-  padding: 3rem;
+.bg-login {
+  background-image: url(./images/login-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .box {
-  background-color: #d9d9d9;
-  border-radius: 24px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 4px 9.9px #00000040;
 }
 
-.swg-color {
+.login-bg {
   background: #fff;
+  margin: 50px 0;
+  padding: 40px 50px;
 }
-
-.swg-color:hover {
-  background-color: #6C757D;
-  color: #fff;
-}
-
 
 .blur {
   filter: blur(4px);
 }
 
+
+
 /* Donor Page */
 .form-donor {
-  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 0 auto;
+  max-width: 807px;
 }
 
 .form-center {
   position: absolute;
   top: 85px;
-  right: 349px;
-  max-width: 807px;
-  margin: 0 auto;
-  background-color: #fed8b6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   border-radius: 5px;
 
 }
+
 
 /* footer */
 .footer {
@@ -410,20 +394,76 @@ html {
 }
 
 
-@media (min-width: 768px) {
+
+/* media query mobile view */
+
+@media (max-width: 576px) {
+  .home-h4 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .home-text {
+    font-size: 30px;
+    font-weight: 200;
+    width: 50%;
+  }
+
+  .form-center {
+    padding: 20px !important;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
   .mtb {
     margin-top: 7rem !important;
   }
-  
-}
-@media (max-width: 768px) {
-  .drop-center .dropdown-item{
+
+  #hero {
+    background-size: auto 100vh;
+    margin-top: -30px;
+  }
+
+  .drop-center .dropdown-item {
     text-align: center;
     width: 100%;
-    /* left: 0 !important;
-    right: 0 !important; */
     margin: 0 auto;
   }
-  
 }
 
+/* Tablets */
+@media (min-width: 577px) and (max-width: 767px) {
+  .form-center {
+    padding: 30px;
+  }
+}
+
+
+
+/* Small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-center {
+    padding: 40px;
+  }
+}
+
+/* Medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .form-center {
+    padding: 50px;
+
+    ;
+  }
+}
+
+/* Large desktops and beyond */
+@media (min-width: 1200px) {
+  .form-center {
+    padding: 60px;
+  }
+}

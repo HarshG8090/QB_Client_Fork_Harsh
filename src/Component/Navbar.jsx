@@ -8,10 +8,10 @@ const Navbar = () => {
     <>
       <section className="navbar-home">
         <div className="container-fluid">
-          <div className="row ">
+          <div className="row">
             <nav className="navbar navbar-expand-lg fixed-top">
-              <div className="container">
-                <div className="logo-site">
+              <div className="container-fluid">
+                <div className="logo-site mleft-logo">
                   <img src={logo} alt="logo" className="img-fluid-logo" />
                 </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                   className="collapse navbar-collapse justify-content-end  "
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav menu-navbar-nav">
+                  <ul className="navbar-nav menu-navbar-nav mright-logo">
                     <li className="nav-item">
                       <NavLink
                         className="nav-link active-h"

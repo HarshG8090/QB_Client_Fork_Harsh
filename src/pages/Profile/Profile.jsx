@@ -12,7 +12,7 @@ const Profile = () => {
 
   const [formData, setFormData] = useState({
     fname: '',
-    lname: '',
+    // lname: '',
     contact: '',
     alternate_Contact: '',
     email: '',
@@ -44,10 +44,10 @@ const Profile = () => {
       newErrors.fname = 'First Name is required';
       valid = false;
     }
-    if (!formData.lname.trim()) {
-      newErrors.lname = 'Last Name is required';
-      valid = false;
-    }
+    // if (!formData.lname.trim()) {
+    //   newErrors.lname = 'Last Name is required';
+    //   valid = false;
+    // }
     if (!/^\d{10}$/.test(formData.contact)) {
       newErrors.contact = 'Contact must be 10 digits';
       valid = false;
@@ -115,7 +115,7 @@ const Profile = () => {
 
         setFormData({
           fname: '',
-          lname: '',
+         
           contact: '',
           alternate_Contact: '',
           email: '',
@@ -180,7 +180,7 @@ const Profile = () => {
                   {errors.fname && <div className="invalid-feedback">{errors.fname}</div>}
                 </div>
 
-                <div className="col-md-2 py-2">
+                {/* <div className="col-md-2 py-2">
                   <label htmlFor="validationDefault02" className="form-label">  </label>
                   <input
                     type="text"
@@ -193,7 +193,7 @@ const Profile = () => {
                     required
                   />
                   {errors.lname && <div className="invalid-feedback">{errors.lname}</div>}
-                </div>
+                </div> */}
 
                 <div className="col-md-3">
                   <label htmlFor="validationDefault03" className="form-label">Contact No</label>
@@ -224,9 +224,7 @@ const Profile = () => {
                   />
                   {errors.alternate_Contact && <div className="invalid-feedback">{errors.alternate_Contact}</div>}
                 </div>
-              </div>
-              <div className='row g-3 pt-3'>
-                <div className="col-md-2">
+                <div className="col-md-3">
                   <label htmlFor="validationDefault05" className="form-label">Email ID</label>
                   <input
                     type="email"
@@ -239,6 +237,21 @@ const Profile = () => {
                   />
                   {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                 </div>
+              </div>
+              <div className='row g-3 pt-3'>
+                {/* <div className="col-md-2">
+                  <label htmlFor="validationDefault05" className="form-label">Email ID</label>
+                  <input
+                    type="email"
+                    className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                    id="validationDefault05"
+                    name="email"
+                    value={formData.email}
+                    onChange={onInputChange}
+                    required
+                  />
+                  {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+                </div> */}
 
                 <div className="col-md-3">
                   <label htmlFor="validationDefault01" className="form-label">Birth Date</label>
@@ -331,7 +344,7 @@ const Profile = () => {
                   {errors.donationDate && <div className="invalid-feedback">{errors.donationDate}</div>}
                 </div>
 
-                <div className="col-md-6 mb-3 ">
+                <div className="col-md-5 mb-3 ">
                   <label htmlFor="validationCustom03" className="form-label">Address</label>
                   <input
                     type="text"
