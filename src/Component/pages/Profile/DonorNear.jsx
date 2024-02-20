@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import Gallery from '../Gallery';
 
-const  DonorHistory=() => {
+const  DonorNear=() => {
   return (
    <>
   <Gallery/>
@@ -10,4 +10,4 @@ const  DonorHistory=() => {
   );
 }
 
-export default DonorHistory;
+export default DonorNear;

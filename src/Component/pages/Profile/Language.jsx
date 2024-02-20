@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import Gallery from '../Gallery';
 
-const  DonorNear=() => {
+const  Language=() => {
   return (
    <>
   <Gallery/>
@@ -10,4 +10,4 @@ const  DonorNear=() => {
   );
 }
 
-export default DonorNear;
+export default Language;

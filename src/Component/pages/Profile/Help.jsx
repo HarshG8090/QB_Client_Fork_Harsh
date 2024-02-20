@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import Gallery from '../Gallery';
 
-const  Language=() => {
+const  Help=() => {
   return (
    <>
   <Gallery/>
@@ -10,4 +10,4 @@ const  Language=() => {
   );
 }
 
-export default Language;
+export default Help;

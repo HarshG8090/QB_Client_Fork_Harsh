@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import * as Icon from "react-bootstrap-icons";
-import logo from "../images/logo-removebg-preview.png";
+import logo from "../../Component/Assest/Brands/logo-removebg-preview.png";
+import '../../App.css';
 
 const Navbar = () => {
   return (
@@ -11,8 +12,8 @@ const Navbar = () => {
           <div className="row">
             <nav className="navbar navbar-expand-lg fixed-top">
               <div className="container-fluid">
-                <div className="logo-site mleft-logo">
-                  <img src={logo} alt="logo" className="img-fluid-logo" />
+                <div className="logo-site mleft-logo ">
+                  <a href="https://www.quickblood.org/"><img src={logo} alt="logo" className="img-fluid-logo" /> </a>
                 </div>
 
                 <button
@@ -28,10 +29,10 @@ const Navbar = () => {
                 </button>
 
                 <div
-                  className="collapse navbar-collapse justify-content-end  "
+                  className="collapse navbar-collapse justify-content-end"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav menu-navbar-nav mright-logo">
+                  <ul className="navbar-nav menu-navbar-nav">
                     <li className="nav-item">
                       <NavLink
                         className="nav-link active-h"
@@ -57,16 +58,16 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/receiver">
+                      <NavLink className="nav-link" to="/hospital">
                         Receiver
                       </NavLink>
                     </li>
-                    <li className="nav-item ">
-                    
-                      <Link className="nav-link" to="/login">
-              Login
-            </Link>
-                      
+                    <li className="nav-item mright-logo">
+
+                      <Link className="nav-link overflow-hidden " to="/login">
+                        Login
+                      </Link>
+
                     </li>
 
                     <li className="nav-item dropdown">

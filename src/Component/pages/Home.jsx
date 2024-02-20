@@ -1,40 +1,52 @@
 import React from 'react';
-import '../App.css';
-import donate from '../images/why-donate.png'
-import Navbar from '../Component/Navbar';
-import Footer from '../Component/Footer';
+import '../../App.css';
+import donate from '../../Component/Assest/images/why-donate.png'
+import Banner from '../Assest/images/home-bg.png'
+import Navbar from '../../Component/layout/Navbar';
+import Footer from '../../Component/layout/Footer';
 
 const Home = () => {
   return (
     <>
+
+      {/* start navbar-section */}
       <Navbar />
-      <section id="hero" className='d-flex align-items-center justify-content-center img-fluid overflow-hidden'>
-        <div className='container'>
-          <div className='row mt-5'>
-            <div className='col-md-12  text-md-start'>
-              <h4 className='home-h4 mt-5'>Donate Blood and get Real Blessings</h4>
-              <p className='home-text text-lg-start text-md-start mt-2'>Blessed are those who selflessly give the gift of life through blood donation. In every drop, there lies the potential to save a life and bring hope to those in need. </p>
+      {/* end navbar-section */}
+
+
+      {/* start home-banner section */}
+      <section id="home" className='d-flex align-items-center justify-content-center overflow-hidden'>
+        <div className='container mt-5'>
+          <div className='row d-flex align-items-center'>
+            <div className='col-lg-8 col-md-12 text-left  home-txt ' >
+              <h4 className='home-h4 '>Donate Blood and get Real Blessings</h4>
+              <p className='home-text'>Blessed are those who selflessly give the gift of life through blood donation. In every drop, there lies the potential to save a life and bring hope to those in need. </p>
+            </div>
+            <div className="col-lg-4 col-md-12">
+              <img src={Banner} alt="home-bg" className='img-fluid rounded-circle' />
             </div>
           </div>
         </div>
       </section>
+      {/* end home-banner section */}
 
 
       <section className='container mt-5 mb-2 why'>
         <div className='row'>
           <div className='col-lg-9 col-md-12 order-md-1 order-2 align-center p-4'>
-            <p className='fs-1 text-muted fw-bold text-center'>Why to Donate Blood</p>
-            <p className='lh-base text-muted'>Donating blood is crucial because it saves lives. When you donate blood, you provide a lifeline to individuals facing medical emergencies, surgeries, trauma, and various medical conditions. Blood donations are essential for:<strong>Emergency Situations, Medical Treatments, Chronic Illnesses, Pregnancy and Childbirth, Diseases and Disorders.</strong>  By donating blood, you contribute to the community's health and well-being, playing a direct role in saving lives and improving the quality of life for those in need.</p>
+            <p className='fs-1 text-muted fw-bold text-left'>Why to Donate Blood</p>
+            <p className='lh-base text-muted text-justify'>Donating blood is crucial because it saves lives. When you donate blood, you provide a lifeline to individuals facing medical emergencies, surgeries, trauma, and various medical conditions. Blood donations are essential for:<strong>Emergency Situations, Medical Treatments, Chronic Illnesses, Pregnancy and Childbirth, Diseases and Disorders.</strong>  By donating blood, you contribute to the community's health and well-being, playing a direct role in saving lives and improving the quality of life for those in need.</p>
           </div>
           <div className='col-lg-3 col-md-12 order-md-2 order-1 mt-3 mt-md-0 text-center'>
-            <img src={donate} alt="why-donate" height={250} className='rounded-circle img-why pt-2' />
+            <img src={donate} alt="why-donate" height={250} className='rounded-circle img-why pt-2 mb-img' />
           </div>
         </div>
       </section>
 
+      {/* start card section */}
       <section class="py-5 card-div">
         <div class="container-fluid px-4 px-lg-5 mt-5">
-          <h4 class="heading fw-semibold my-5 text-center">Who can Donate Blood?</h4>
+          <h4 class="heading fw-semibold my-5 text-center overflow-hidden">Who can Donate Blood?</h4>
           <div class="row gx-4 gx-lg-5 ">
             <div class=" mb-5 col-xl-3 col-md-6 d-flex align-items-center">
               <div class="card h-100 px-4 text-center  bg-1">
@@ -64,26 +76,28 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-      {/* </div> */}
+      {/* end card section */}
 
 
       <section className='paragraph container mb-5'>
-        <p className='text-center'>IT can also include Travel History: Some regions have restrictions based on recent travel to certain countries to prevent the spread of infectious diseases. Lifestyle and Risk Behaviors: Certain lifestyle choices and behaviors, such as recent drug use or high-risk sexual activity, may temporarily or permanently disqualify individuals from donating. Medical History: Certain medical conditions or medications may impact eligibility. It's important to disclose relevant medical information during the screening process. It's crucial to note that eligibility criteria can change, and specific requirements may vary by location and organization. Prospective donors should check with local blood banks or organizations for the most accurate and up-to-date information.</p>
+        <p className='text-justify'>IT can also include Travel History: Some regions have restrictions based on recent travel to certain countries to prevent the spread of infectious diseases. Lifestyle and Risk Behaviors: Certain lifestyle choices and behaviors, such as recent drug use or high-risk sexual activity, may temporarily or permanently disqualify individuals from donating. Medical History: Certain medical conditions or medications may impact eligibility. It's important to disclose relevant medical information during the screening process. It's crucial to note that eligibility criteria can change, and specific requirements may vary by location and organization. Prospective donors should check with local blood banks or organizations for the most accurate and up-to-date information.</p>
       </section>
+
+
 
       <section className='gift'>
         <div className='container'>
           <div className='row'>
-            <h2 className='text-center fw-semibold'>Give the gift of life: Donate blood. Your generosity has the power to save lives and create a legacy of compassion</h2>
+            <h2 className='text-center fw-semibold overflow-hidden'>Give the gift of life: Donate blood. Your generosity has the power to save lives and create a legacy of compassion</h2>
           </div>
         </div>
       </section>
 
+
+      {/* start card section */}
       <section class="py-3 card-div">
         <div class="container px-4 px-lg-5 mt-5">
-          <h4 class="heading fw-semibold my-5 text-center"> Tips On Donation Day’s</h4>
+          <h4 class="heading fw-semibold my-5 text-center overflow-hidden"> Tips On Donation Day’s</h4>
           <div class="row gx-4 gx-lg-5 ">
             <div class=" mb-5 col-xl-4 col-md-6 d-flex align-items-center">
               <div class="card h-100 px-4 text-center  bg-1 ">
@@ -106,15 +120,17 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* end card section */}
 
 
 
-
-
+      {/* start footer section */}
       <Footer />
+      {/* end footer section */}
 
 
     </>
+
   );
 }
 
